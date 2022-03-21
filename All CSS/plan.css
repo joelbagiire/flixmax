@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+#logo{
+    margin-left: 65px;
+    font-size: 2.5em;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+#logo span{
+    color: #ff00ff;
+}
+
+#btn_signout{
+    margin-right: 65px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#content h1, p{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+#pakages{
+    width: 65%;
+    height: 600px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+}
+.card{
+    background: #ff00ff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    opacity: .4;
+    border-radius: 7px;
+}
+.card h2{
+    align-self: flex-start;
+}
+.card #price{
+    align-self: flex-start;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#res{
+    align-self: flex-start;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#quality{
+    align-self: flex-start;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#btn_nxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    width: 37%;
+    height: 50px;
+}
+#btn_nxt button{
+    background: #ff00ff;
+    border: 1px solid #ff00ff;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+footer{
+    margin-top: 60px;
+    height: 200px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    background: rgba(0, 0, 0, 0.041);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links a{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.705);
+    font-family: 'Poppins', sans-serif;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.active{
+    opacity: 1;
+}
+#model{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 777;
+    height: 205%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.918);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#btn_close{
+    color: #ffffff;
+    font-size: 2.5em;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+}
+.model_card{
+    background: #ffffff;
+    border-radius: 6px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #000;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#heading h3{
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
+#heading #visa_logo{
+    width: 20%;
+    height: 45%;
+    position: relative;
+}
+#visa_logo img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.inputs{
+    margin-top: 35px;
+    width: 70%;
+    display: grid;
+    gap: 15px;
+}
+.inputs input{
+    height: 35px;
+    outline: none;
+}
+.inputs p{
+    width: 100%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.479);
+    margin-top: -10px;
+}
+#paragraph{
+    width: 70%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    flex-direction: column;
+}
+#model_link{
+    display: block;
+    width: 100%;
+}
+#model_link span{
+    color: #ff00ff;
+}
+#model_link a{
+    text-decoration: none;
+    color: rgba(0, 60, 255, 0.74);
+}
+#model_link a:hover{
+    text-decoration: underline;
+}
+#btn_agree span{
+    font-size: 1.3em;
+}
+#btn_agree input{
+    cursor: pointer;
+}
+#btn_start{
+    width: 70%;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn_start button{
+    outline: none;
+    border: 1px solid #ff00ff;
+    border-radius: 4px;
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #ff00ff;
+}
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        font-size: .6em;
+    }
+    #content h1{
+        font-size: 1.2em;
+    }
+    #content p{
+        font-size: .7em;
+    }
+    #pakages{
+        width: 65%;
+        height: 450px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+    }
+    .card{
+        background: #ff00ff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        opacity: .4;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+    .active{
+        opacity: 1;
+    }
+    #model{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 777;
+        height: 217%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.918);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    #btn_start button{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 530px){
+    body{
+        overflow-x: hidden;
+    }
+    #pakages{
+        width: 65%;
+        height: 350px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+    }
+    .card{
+        background: #ff00ff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        opacity: .4;
+        border-radius: 7px;
+        font-size: 9px;
+    }
+    #btn_nxt button{
+        background: #ff00ff;
+        border: 1px solid #ff00ff;
+        width: 60%;
+        height: 60%;
+        cursor: pointer;
+        font-size: .9em;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 4px;
+        cursor: not-allowed;
+    }
+    footer{
+        margin-top: 60px;
+        height: 100px;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 50px;
+        background: rgba(0, 0, 0, 0.041);
+    }
+    #btn_close{
+        font-size: 1.4em;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links a{
+        font-size: .6em;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.705);
+        font-family: 'Poppins', sans-serif;
+    }
+    .links a:hover{
+        text-decoration: underline;
+    }
+    .active{
+        opacity: 1;
+    }
+    #model{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 777;
+        height: 250%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.918);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    #btn_start button{
+        font-size: .7em;
+    }
+}
+@media only screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        font-size: .5em;
+        height: 50px;
+    }
+    #content h1{
+        font-size: .9em;
+    }
+    #content p{
+        font-size: .6em;
+    }
+    #pakages{
+        width: 65%;
+        height: 350px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1,100%);
+    }
+    .card{
+        background: #ff00ff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        opacity: .4;
+        border-radius: 7px;
+        font-size: 9px;
+    }
+    #btn_nxt button{
+        margin-top: 650px;
+        background: #ff00ff;
+        border: 1px solid #ff00ff;
+        width: 100%;
+        height: 60%;
+        cursor: pointer;
+        font-size: .9em;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 4px;
+        cursor: not-allowed;
+    }
+    footer{
+        margin-top: 340px;
+        height: 100px;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 10px;
+        background: rgba(0, 0, 0, 0.041);
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links a{
+        font-size: .6em;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.705);
+        font-family: 'Poppins', sans-serif;
+    }
+    .links a:hover{
+        text-decoration: underline;
+    }
+    .active{
+        opacity: 1;
+    }
+    #model{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 777;
+        height: 250%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.918);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    #btn_close{
+        color: #ffffff;
+        font-size: 2.5em;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        cursor: pointer;
+    }
+    .model_card{
+        background: #ffffff;
+        border-radius: 6px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        color: #000;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #btn_close{
+        font-size: 1.4em;
+    }
+    #heading h3{
+        font-size: 1.4em;
+        font-family: 'Poppins', sans-serif;
+    }
+    #heading #visa_logo{
+        width: 20%;
+        height: 45%;
+        position: relative;
+    }
+    #visa_logo img{
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .inputs{
+        align-self: flex-start;
+        margin-top: 35px;
+        width: 70%;
+        display: grid;
+        gap: 15px;
+    }
+    .inputs input{
+        height: 25px;
+    }
+    .inputs p{
+        width: 100%;
+        font-size: 10px;
+    }
+    #paragraph{
+        align-self: flex-start;
+        width: 95%;
+        font-size: 10px;
+    }
+    #model_link{
+        display: block;
+        width: 100%;
+    }
+    #model_link span{
+        color: #ff00ff;
+    }
+    #model_link a{
+        text-decoration: none;
+        color: rgba(0, 60, 255, 0.74);
+    }
+    #model_link a:hover{
+        text-decoration: underline;
+    }
+    #btn_agree span{
+        font-size: 1.3em;
+    }
+    #btn_agree input{
+        cursor: pointer;
+    }
+    #btn_start button{
+        font-size: .7em;
+    }
+    #heading h3{
+        font-size: .8em;
+    }
+}
+@media only screen and (max-width: 320px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        font-size: .43em;
+    }
+    #logo{
+        margin-left: 25px;
+        font-size: 2.5em;
+    }
+    #logo span{
+        color: #ff00ff;
+    }
+    
+    #btn_signout{
+        margin-right: 25px;
+    }
+    .model_card{
+        background: #ffffff;
+        border-radius: 6px;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #btn_close{
+        font-size: 1.2em;
+    }
+    footer{
+        margin-top: 340px;
+        height: 100px;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-left: 60px;
+        background: rgba(0, 0, 0, 0.041);
+    }
+}
